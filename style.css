@@ -35,20 +35,36 @@ section
     padding-bottom: 10rem;
     text-align: center;
 }
+.btn-social
+{
+width: 5rem;
+height: 5rem;
+border-radius: 50%;
+font-size: 2rem;
+line-height: 2rem;
+}
+.btn-large
+{
+    font-size: 2rem;
+    padding: 2.2rem 1.6rem;
+}
 
 .btn
 {
-    margin-top: 2rem;
-    font-size: 2rem;
-    padding: 2.8rem 1.6rem;
+    margin-top: 4rem;
     font-weight: 400;
     display:inline-block;
-    background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid transparent;
     color: #fff;
     border-radius: 0.4rem;
     cursor: pointer;
     transition: all .5s;
+}
+.btn-outline
+{
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
 }
 .btn:hover
 {
@@ -323,4 +339,33 @@ text-align: center;
  .form-grup input,.form-grup textarea:focus
  {
     outline: 0;
+ }
+ footer
+ {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+ }
+ footer h4
+ {
+    font-size: 2.4rem;
+ }
+ footer p
+ {
+    font-size: 2rem;
+    margin-top: 1re;
+ }
+ footer li{
+    display: inline-block;
+    margin-right: 1rem;
+ }
+ .copyright
+ {
+    background-color: #1A252F;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: #fff;
+    text-align: center;
  }
