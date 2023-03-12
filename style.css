@@ -29,6 +29,44 @@ a
 {
     text-decoration: none;
 }
+section
+{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.btn
+{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 2.8rem 1.6rem;
+    font-weight: 400;
+    display:inline-block;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+.btn:hover
+{
+    color: #212529;
+    background-color: #fff;
+}
+.btn-primary
+{
+    background-color: #18BC9C;
+    border-color: #18BC9C;
+    color: #fff;
+    padding: 1.2rem 1rem;
+}
+.btn-primary:hover
+{
+    background-color: #128f76;
+    border-color: #128f76;
+}
 ul
 {
     list-style-type: none;
@@ -178,10 +216,7 @@ text-align: center;
 
  #portfolio
  {
-    height: 600px;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    text-align: center;
+    height: 800px;
  }
 
  #portfolio h2
@@ -226,4 +261,66 @@ text-align: center;
  .portfolio-item:hover .img-overlay
  {
     opacity: 0.8;
+ }
+
+ #about
+ {
+    background-color: #18BC9C;
+    color: #fff;
+ }
+ #about h2
+ {
+    font-size: 4.8rem;
+
+ }
+ #about-text
+ {
+    text-align: center;
+ }
+ #about-text .left
+ {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+ }
+ #about-text .right{
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 23rem;
+ }
+ #about-text .text
+ {
+    font-size: 2rem  ;
+ }
+ #contact h2
+ {
+    font-size: 4.8rem;
+    color: #2C3E50;
+ }
+ #contact-form
+ {
+    width: 70%;
+    margin: 0 auto;
+
+    text-align: left;
+ }
+ #contact .form-grup
+ {
+   border-bottom: 1px solid #e9ecef;
+   padding-bottom: 3rem;
+   margin-bottom: 4rem;
+   
+ }
+ .form-grup input, .form-grup textarea
+ {
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+ }
+ .form-grup input,.form-grup textarea:focus
+ {
+    outline: 0;
  }
