@@ -19,8 +19,13 @@
                     logo
                 </a>
             </div>
-            <div id="nav-links">
+            <div id="nav-links" class="responsive">
                 <ul>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase nav-icon">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-uppercase">Portfolio</a>
                     </li>
@@ -43,11 +48,11 @@
             <h2>Web Developer - Grafik Artist - User Experience Designer</h2>
         </div>
     </header>
-    <section id="portfolio">
+    <section id="portfolio ">
         <div class="container">
             <h2 class="text-uppercase">Portfolio</h2>
             <hr class="star-dark">
-            <div id="portfolio-images clearfix">
+            <div id="portfolio-images" class="clearfix">
                 <div class="col">
                     <div class="portfolio-item">
                         <a href="#">
@@ -242,5 +247,14 @@
             </small>
         </div>
     </div>
+    <script
+       src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+       
+       <script>
+        $('.nav-icon').click(function(){
+            $('#nav-links').toggleClass("responsive");
+            return false;
+        });
+       </script>
 </body>
 </html>
