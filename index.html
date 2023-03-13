@@ -27,20 +27,20 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-uppercase">Portfolio</a>
+                        <a href="#Port" class="nav-link text-uppercase ">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-uppercase">About</a>
+                    <li class="scr nav-item">
+                        <a href="#about" class="nav-link text-uppercase">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-uppercase">Contact</a>
+                    <li class="scr nav-item">
+                        <a href="#contact" class="nav-link text-uppercase">Contact</a>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
-    <header>
+    <header id="Port">
         <div class="container">
             <img id="profile-image" class="img-fluid" src="img/kk.jpg" alt="">
             <h1 class="text-uppercase">Start Bootstrap</h1>
@@ -48,7 +48,7 @@
             <h2>Web Developer - Grafik Artist - User Experience Designer</h2>
         </div>
     </header>
-    <section id="portfolio ">
+    <section id="portfolio">
         <div class="container">
             <h2 class="text-uppercase">Portfolio</h2>
             <hr class="star-dark">
@@ -104,23 +104,6 @@
                     </div>
 
                 </div>
-                <!-- <div class="col">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-fluid2" src="img/kk.jpg" alt="">
-
-                            <div class="img-overlay">
-                                <div class="icon">
-                                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-                                </div>
-                            </div>
-
-                        
-                        </a>
-
-                    </div>
-
-                </div>
                 <div class="col">
                     <div class="portfolio-item">
                         <a href="#">
@@ -154,7 +137,24 @@
 
                     </div>
 
-                </div> -->
+                </div>
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluid2" src="img/kk.jpg" alt="">
+
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+                                </div>
+                            </div>
+
+                        
+                        </a>
+
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -255,6 +255,47 @@
             $('#nav-links').toggleClass("responsive");
             return false;
         });
+       </script>
+       <script>
+
+        const lists = document.querySelectorAll('nav ul li');
+
+        lists.forEach(list => {
+            list.addEventListener('click', (e)=>{
+                e.preventDefault();
+                [... lists].map(list=>list.classList.remove('active'));
+                list.classList.add('active');
+                let target = list.querySelector('a').getAttribute('href').replace('#','');
+                document.getElementById(target).scrollIntoView({
+                    behavior:"smooth",
+                    block:"center",
+                    inline:"center"
+                    
+                })
+            });
+        });
+
+        // $(function(){
+        //     $("#scabout").click(function(){
+        //     $(document).scrollTop(1870);
+        // });
+
+        //  $("#sccontact").click(function(){
+            
+        //  $(document).scrollTop(2470);
+        //  });
+
+        // });
+
+        // document.getElementById('Port').addEventListener('click', (e)=>{
+        //     e.preventDefault();
+        //     document.body.scrollIntoView({
+        //         behavior:"smooth"
+        //     })
+        // });
+
+        
+
        </script>
 </body>
 </html>

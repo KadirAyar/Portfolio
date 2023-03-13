@@ -34,6 +34,7 @@ section
     padding-top: 10rem;
     padding-bottom: 10rem;
     text-align: center;
+    scroll-margin-top: 130px;
 }
 .btn-social
 {
@@ -222,6 +223,10 @@ padding: 1.6rem;
 display:block;
 letter-spacing: 0.1rem;
 transition: color .3s;
+cursor:pointer;
+}
+.active{
+    background-color: #128f76;
 }
 
 #nav-links .nav-link:hover
@@ -325,11 +330,6 @@ text-align: center;
     top: -3rem;
 }
  /* Portfolio */
-
- #portfolio
- {
-    height: 800px;
- }
 
  #portfolio h2
  {
